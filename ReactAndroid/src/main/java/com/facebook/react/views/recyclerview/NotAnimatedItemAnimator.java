@@ -2,12 +2,14 @@
 
 package com.facebook.react.views.recyclerview;
 
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.RecyclerView;
+
 
 /**
  * Implementation of {@link RecyclerView.ItemAnimator} that disables all default animations.
  */
-/*package*/ class NotAnimatedItemAnimator extends RecyclerView.ItemAnimator {
+/*package*/ class NotAnimatedItemAnimator extends DefaultItemAnimator {
 
   @Override
   public void runPendingAnimations() {
